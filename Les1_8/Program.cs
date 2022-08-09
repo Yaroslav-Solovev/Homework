@@ -12,7 +12,7 @@ if (number <= 0)
 }
 else
 {
-    for (int i = 2; i < number; i++)
+    for (int i = 1; i < number; i++)
     if (i%2 == 0)
     Console.WriteLine(i);  
 }
