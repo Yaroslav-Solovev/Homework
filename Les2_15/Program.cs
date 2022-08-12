@@ -34,3 +34,4 @@ else
     Console.WriteLine(number + " - не является выходным днем");
     else
     Console.WriteLine("Число " + number + " не обозначает день недели");
+    
