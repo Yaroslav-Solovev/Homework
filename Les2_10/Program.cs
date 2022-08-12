@@ -14,7 +14,7 @@ var number = int.Parse(numberString!);
 
 if ((number > 100 && number < 1000) || (number > -1000 && number < -100))
 {
-    number /= 10;  // number = number / 10
+    number /= 10;
     long result = number % 10;
     if (result < 0)
         result *= (-1);
