@@ -4,23 +4,24 @@
 // 782 -> 8
 // 918 -> 1
 
-Console.WriteLine("Программа, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.");
+Console.WriteLine("\nПрограмма, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.");
 
-Console.WriteLine("Введите число ");
+Console.WriteLine("\nВведите число ");
 
 string? numberString = Console.ReadLine();
 
 var number = int.Parse(numberString!);
 
-if ((number > 100 && number < 1000) || (number > -1000 && number < -100))
+if (number < 0)
+    number *= (-1);
+
+if (number > 99 && number < 1000)
 {
     number /= 10;
     long result = number % 10;
-    if (result < 0)
-        result *= (-1);
-    Console.WriteLine("Вторая цифра введенного трехзначного числа: " + result);
+    Console.WriteLine("\nВторая цифра введенного трехзначного числа: " + result);
 }
 else
 {
-    Console.WriteLine("Error: Вы ввели не трехзначное число. Пожалуйста заново введите число.");
+    Console.WriteLine("\nError: Вы ввели не трехзначное число. Пожалуйста заново введите число.");
 }
