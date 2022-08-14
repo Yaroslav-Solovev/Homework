@@ -2,6 +2,9 @@
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
 
+// Комент (Предложение) использовать цикл for вместо while
+// for(var index = 1, index <= number, index++ ){Console.WriteLine(index*index*index); }
+
 Console.WriteLine("Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N");
 Console.WriteLine("\nВведите число");
 
