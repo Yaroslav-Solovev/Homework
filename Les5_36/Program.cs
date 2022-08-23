@@ -9,7 +9,7 @@ int[] CreateArray()
     var random = new Random();
     for (int i = 0; i < array.Length; i ++)
     {
-        array[i] = random.Next(-100,100);
+        array[i] = random.Next(-10,10);
     }
     return array;
 }
@@ -21,7 +21,7 @@ int sumOddNumbers(int[] arr)
 
     for (long i = 0; i < arr.Length; i++)
     {
-        if (i % 2 == 0)
+        if (i % 2 == 1)
             result += arr[i];
     }
     return result;
