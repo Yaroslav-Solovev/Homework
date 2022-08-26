@@ -15,7 +15,7 @@ int[] CreateArray()
 }
 
 // Функция поиска суммы элементов, стоящих на нечётных позициях
-int sumOddNumbers(int[] arr) 
+int SumOddNumbers(int[] arr) 
 {
     var result = 0;
 
@@ -28,7 +28,7 @@ int sumOddNumbers(int[] arr)
 }
 
 // Функция вывода массива
-void viewArr(int[] arr)
+void ViewArr(int[] arr)
 {
     string result = "[";
     for (int i = 0; i < arr.Length; i++)
@@ -46,7 +46,7 @@ void viewArr(int[] arr)
 }
 
 int[] array = CreateArray();
-viewArr(array);
+ViewArr(array);
 
-int result = sumOddNumbers(array);
+int result = SumOddNumbers(array);
 Console.WriteLine("Cумма элементов заданного массива, стоящих на нечетных позициях: " + result + ".");
