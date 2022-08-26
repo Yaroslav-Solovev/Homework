@@ -12,7 +12,7 @@ int[] CreateArray()
     return array;
 }
 // Функция поиска количества четных чисел
-int searchNumbers(int[] arr)
+int SearchNumbers(int[] arr)
 {
     int result = 0;
     for (int i = 0; i < arr.Length; i++)
@@ -45,5 +45,5 @@ void viewArr(int[] arr)
 int[] array = CreateArray();
 viewArr(array);
 
-int result = searchNumbers(array);
+int result = SearchNumbers(array);
 Console.WriteLine("Количество четных чисел в заданном масиве: " + result + ".");
