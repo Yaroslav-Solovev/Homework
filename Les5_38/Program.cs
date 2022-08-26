@@ -15,7 +15,7 @@ double[] CreateArray(int length)
 }
 
 // Функция поиска разницы между максимальным и минимальным элементами массива.
-double difMaxMinNumbers(double[] arr) //difference - разница
+double DifMaxMinNumbers(double[] arr) //difference - разница
 {
     var min = arr[0];
     var max = arr[0];
@@ -31,7 +31,7 @@ double difMaxMinNumbers(double[] arr) //difference - разница
 }
 
 // Функция вывода массива
-void viewArr(double[] arr)
+void ViewArr(double[] arr)
 {
     string result = "[";
     for (int i = 0; i < arr.Length; i++)
@@ -54,7 +54,7 @@ Console.Write("Введите размер массива: ");
 int length = int.Parse(Console.ReadLine()!);
 
 double[] array = CreateArray(length);
-viewArr(array);
+ViewArr(array);
 
-double result = difMaxMinNumbers(array);
+double result = DifMaxMinNumbers(array);
 Console.WriteLine("Разница между максимальным и минимальным элементами заданного массива: " + result + ".");
