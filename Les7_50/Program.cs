@@ -6,7 +6,6 @@
 // 8 4 2 4
 // 17 -> такого числа в массиве нет
 
-
 // Функция вывода массива
 int[,] CreateArrayWithRandomNumbers(int m, int n)
 {
