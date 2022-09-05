@@ -3,12 +3,12 @@
 // M = 4; N = 8. -> ""4, 6, 7, 8""
 
 // Функция вывода натуральных чисел от M до N.
-void PrintNaturalNumbers (int numberM, int numberN)
+void PrintNaturalNumbers(int numberM, int numberN)
 {
-    if (numberM==numberN) Console.Write ($"{numberN}" );
+    if (numberM == numberN) Console.Write($"{numberN}");
     else
     {
-        Console.Write($"{numberM}, " );
+        Console.Write($"{numberM}, ");
         PrintNaturalNumbers(numberM + 1, numberN);
     }
 }
@@ -19,6 +19,6 @@ int numberM = Convert.ToInt16(Console.ReadLine());
 Console.Write("Введите значение N = ");
 int numberN = Convert.ToInt16(Console.ReadLine());
 
-Console.Write("Натуральные числа в промежутке от M до N: "); 
+Console.Write("Натуральные числа в промежутке от M до N: ");
 PrintNaturalNumbers(numberM, numberN);
 
