@@ -27,12 +27,14 @@ void PrintArray(int[,] array)
 }
 
 Console.WriteLine("Введите число строк (m)");
-if(!int.TryParse(Console.ReadLine()!, out var m)) {
+if (!int.TryParse(Console.ReadLine()!, out var m))
+{
     Console.WriteLine("Error");
 }
 
 Console.WriteLine("Введите число столбцов (n)");
-if(!int.TryParse(Console.ReadLine()!, out var n)) {
+if (!int.TryParse(Console.ReadLine()!, out var n))
+{
     Console.WriteLine("Error");
 }
 
@@ -43,11 +45,19 @@ PrintArray(array);
 
 // Нахождение среднее арифметического каждого столбца массива
 Console.Write($"\nCреднее арифметическое каждого столбца: ");
-for (int i = 0; i < n; i++){
-  double arithmeticMean = 0;
-  for (int j = 0; j < m; j++){
-    arithmeticMean += array[j, i];
-  }
-  arithmeticMean = Math.Round(arithmeticMean / m, 1);
-  Console.Write($"{arithmeticMean}; ");
+for (int i = 0; i < n; i++)
+{
+    double arithmeticMean = 0;
+    for (int j = 0; j < m; j++)
+    {
+        arithmeticMean += array[j, i];
+    }
+    arithmeticMean = Math.Round(arithmeticMean / m, 1);
+    Console.Write($"{arithmeticMean}; ");
 }
+
+
+
+// 1. Считывание из консоли с обработкой трайпарсов стоит вынести в отдельный метод, иначе код повторяется
+// 2. Тут аналогично. Не забывайте использовать авто форматирование на Shift + Alt + F для виндоус и Shift + Command + F для мака, потому что формат кода сейчас не единообразный
+// 3. Всё то же, что и выше. Поиск ср. ариф. — в отдельный метод
