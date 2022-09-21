@@ -25,3 +25,6 @@ int numberN = Convert.ToInt16(Console.ReadLine());
 int sum = 0;
 
 Console.Write("Cумма натуральных элементов в промежутке от " + numberM + " до " + numberN + ": " + $"{RecursMetod(numberM, numberN, sum)} ");
+
+// 2. Если поставить параметру sum значение по умолчанию через знак равенства: int RecursMetod(int numberM, int numberN, int sum = 0), 
+// то использование метода будет более интуитивным: RecursMetod(numberM, numberN) (имя, кстати, лучше поменять)
