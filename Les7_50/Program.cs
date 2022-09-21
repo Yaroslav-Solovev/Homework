@@ -28,12 +28,14 @@ void PrintArray(int[,] array)
 }
 
 Console.WriteLine("Введите число строк (m)");
-if(!int.TryParse(Console.ReadLine()!, out var m)) {
+if (!int.TryParse(Console.ReadLine()!, out var m))
+{
     Console.WriteLine("Error");
 }
 
 Console.WriteLine("Введите число столбцов (n)");
-if(!int.TryParse(Console.ReadLine()!, out var n)) {
+if (!int.TryParse(Console.ReadLine()!, out var n))
+{
     Console.WriteLine("Error");
 }
 
@@ -48,10 +50,17 @@ Console.WriteLine("Позиция x (строка):");
 int x = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Позиция y (столбец):");
 int y = Convert.ToInt32(Console.ReadLine());
-if (x > m && y > n){
-  Console.WriteLine("Такого элемента в массиве нет.");
+if (x > m && y > n)
+{
+    Console.WriteLine("Такого элемента в массиве нет.");
 }
-else{
-  object? z = array.GetValue(x,y);
-  Console.WriteLine("Значение искомого элемента: " + z + ".");
+else
+{
+    object? z = array.GetValue(x, y);
+    Console.WriteLine("Значение искомого элемента: " + z + ".");
 }
+
+
+// 1. Считывание из консоли с обработкой трайпарсов стоит вынести в отдельный метод, иначе код повторяется
+// 2. Тут аналогично. Не забывайте использовать авто форматирование на Shift + Alt + F для виндоус и Shift + Command + F для мака, потому что формат кода сейчас не единообразный
+// 3. Всё то же, что и выше. Поиск ср. ариф. — в отдельный метод
